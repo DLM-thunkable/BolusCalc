@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>body {font-family: Arial, Helvetica, sans-serif; font-size:small;} table, td, caption {border:1px solid black; page-break-after:avoid;} td {text-align:center;} caption {padding-top:5px; padding-bottom:5px;} div {page-break-after:always;}</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Include the Thunkable Web Viewer Extension -->
+     <script src="https://thunkable.github.io/webviewer-extension/thunkableWebviewerExtension.js" type="text/javascript"></script>
+    <title>Thunkable Web Bridge Demo</title>
+  </head>
+  <body>
+    <!-- Optional: Display received messages -->
+    <span id="messageDisplay"></span>
+  </body>
+  <script type="text/javascript">ThunkableWebviewerExtension.receiveMessage(function(htmlpdf) {
+document.getElementById('messageDisplay').innerHTML = htmlpdf;
+    });
+  </script>
+</html>
