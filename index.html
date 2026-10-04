@@ -5,12 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Include the Thunkable Web Viewer Extension -->
      <script src="https://thunkable.github.io/webviewer-extension/thunkableWebviewerExtension.js" type="text/javascript"></script>
-    <title>Thunkable Web Bridge Demo</title>
   </head>
- // <body>
-   // <!-- Optional: Display received messages -->
-   // <span id="messageDisplay">If this message persists, then your device's browser cannot display the HTML code. You can still create a PDF file by first clicking the button above to hide the HTML and then clicking the <em>Make PDF</em> icon below.<br><br>___________________<br><br>Si ce message persiste, cela signifie que le navigateur de votre appareil ne peut pas afficher le code HTML. Vous pouvez néanmoins créer un fichier PDF en cliquant d'abord sur le bouton ci-dessus pour masquer le code HTML, puis en cliquant sur l'icône <em>Créer un PDF</em>.</span>
- // </body>
   <script type="text/javascript">ThunkableWebviewerExtension.receiveMessage(function(htmlpdf) {
 document.getElementById('messageDisplay').innerHTML = htmlpdf;
     });
