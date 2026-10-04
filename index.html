@@ -12,7 +12,7 @@
 <script>
 // when we get a message from the app, display it on the page
 ThunkableWebviewerExtension.receiveMessage(function(message) {
- document.body.innerHTML = message;
+ document.getElementById('messageDisplay').innerHTML = message;
 });
 </script>
   </body>
