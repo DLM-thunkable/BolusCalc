@@ -8,11 +8,12 @@
     <title>Thunkable Web Bridge Demo</title>
   </head>
   <body>
-<script>
-// when we get a message from the app, display it on the page
-ThunkableWebviewerExtension.receiveMessage(function(message) {
- document.innerHTML = message;
-});
-</script>
+  <div id="content"></div>
+  <script>
+    // when we get a message from the app, display it inside the content div
+    ThunkableWebviewerExtension.receiveMessage(function(message) {
+      document.getElementById('content').innerHTML = message;
+    });
+  </script>
   </body>
 </html>
